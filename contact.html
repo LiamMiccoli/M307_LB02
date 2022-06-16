@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Contact | Lion Sanctuary NFT</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+            href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+            rel="stylesheet">
+    <script src="https://kit.fontawesome.com/e44c60a855.js" crossorigin="anonymous"></script>
+</head>
+
+<body class="mode">
+<header>
+    <div class="nav">
+        <a href="index.html"><img src="img/logo.svg" alt="logo-svg" class="logo"></a>
+        <div class="navigation">
+            <nav>
+                <ul>
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a class="current" href="contact.html">Contact</a>
+                    </li>
+                    <li>
+                        <a id="login" href="login.html">Login</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+</header>
+<main>
+    <h2>Lion Sanctuary NFT</h2>
+    <H1>Contact</H1>
+    <section class="notified">
+        <h3>
+            Get in Touch
+        </h3>
+        <p class="p-notified">Get in Touch with us.</p>
+        <section class="form newsletter contact">
+            <form method="post" class="form-contact" id="form-contact"
+                  onsubmit="event.preventDefault(); validationForm();">
+
+                <div class="form-input-contact form-name">
+                    <div>
+                        <p> Firstname:* </p>
+                        <input type="text" placeholder="First Name" name="firstname" maxlength="40" required
+                               id="fname" minlength="2">
+                    </div>
+                    <div class="form-input-contact">
+                        <p> Lastname:* </p>
+                        <input type="text" placeholder="Last Name" name="lastname" maxlength="40" required
+                               id="lname" minlength="2">
+                    </div>
+                </div>
+                <div class="form-input-contact">
+                    <p>E-Mail:*</p>
+                    <input type="text" placeholder="Email address" name="mail" id="mail" required minlength="5"
+                           maxlength="40">
+
+                </div>
+
+                <div class="phone-section form-input-contact">
+                    <p>Enter your phone number:*</p>
+                    <input type="tel" placeholder="Phone Number" id="phone" name="phone" required>
+                </div>
+
+                <div class="form-input-contact message">
+                    <p>
+                        Your Message:*</p>
+                    <textarea name="txt" maxlength="2500" placeholder="Type your Message here ..."
+                              id="message"></textarea>
+                </div>
+                <div class="form-input-contact">
+                    <p>
+                        Pick a date to be contacted at:</p>
+                    <input type="date" id="datePickerId">
+                </div>
+                <div class="radio form-input-contact">
+                    <h4>How would you like to be contacted?*</h4>
+                    <div class="radio-div">
+                        <input type="radio" id="email-radio" name="fav_language" value="email-radio" class="radio">
+                        <label for="email-radio">E-Mail</label><br>
+                    </div>
+                    <div class="radio-div">
+                        <input type="radio" id="sms-radio" name="fav_language" value="sms-radio" class="radio">
+                        <label for="sms-radio">SMS</label><br>
+                    </div>
+                </div>
+                <div class="upload form-input-contact">
+                    <form method="post" enctype="multipart/form-data">
+                        <p>Upload a file:</p>
+                        <input type="file" name="bild" accept="image/*">
+                    </form>
+                </div>
+                <div class="submit-newsletter submit-contact form-input-contact">
+                    <input type="submit" value="Submit" onclick="event.preventDefault(); validationForm();  "
+                           id="form-sub">
+                </div>
+                <span id="text"></span>
+            </form>
+            <p class="smalltext">Fields marked with * need to be filled out</p>
+            <section class="check-message " id="feedback">
+
+            </section>
+            <section class="check-message" id="feedback-phone">
+
+            </section>
+            <section class="check-message" id="feedback-txt">
+            </section>
+        </section>
+
+    </section>
+</main>
+<footer>
+    <a href="index.html"><img src="img/logo.svg" alt="logo-svg" class="logo"></a>
+    <section class="footer-mid">
+        <h3>
+            Contact
+        </h3>
+        <ul class="footer footer-mail">
+            <li><a href="mailto:lion-sanctuary@seventhfocus.net">lion-sanctuary@seventhfocus.net</a></li>
+            <li><a href="mailto:mail@lion-sanctuary.com">mail@lion-sanctuary.com</a></li>
+        </ul>
+    </section>
+    <ul class="footer footer-nav">
+        <li><a href="">Impressum</a></li>
+        <li><a href="">Datenschutz</a></li>
+    </ul>
+    <script src="js/script.js"></script>
+</footer>
+</body>
+
+</html>
