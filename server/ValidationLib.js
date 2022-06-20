@@ -11,7 +11,6 @@ function showSuccess(id) {
 function validationForm(contactForm) {
     let patternMail = /^\S+@\S+\.\S+$/;
     let patternPhone = /(\b(0041|0)|\B\+41)(\s?\(0\))?(\s)?[1-9]{2}(\s)?[0-9]{3}(\s)?[0-9]{2}(\s)?[0-9]{2}\b/;
-
     //Default: is valid
     let result = {
         isNotValid: false,
@@ -32,23 +31,17 @@ function validationForm(contactForm) {
                 msg: showSuccess(id)
             }
         }
-
- return result;
+        return result;
     }
-
 }
-
-
 
 // Login
 function loginCheck() {
-
     if (contactForm.pw.value === "Admin" && mail.value === "liam@miccoli.com") {
-
     } else {
- }
+    }
 }
+
 module.exports = {
     validationForm
 }
-

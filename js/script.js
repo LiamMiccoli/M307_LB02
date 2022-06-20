@@ -1,8 +1,4 @@
-
-
 // Check required fields
-
-
 function validationForm() {
     let mail = document.getElementById("mail").value;
     let text = document.getElementById("feedback");
@@ -17,10 +13,8 @@ function validationForm() {
     let msgText = document.getElementById('feedback-txt');
     let smsRadio = document.getElementById('sms-radio');
     let emailRadio = document.getElementById('email-radio')
-
     // Validierung E-Mail:
     if (fName.value.trim() != '' && lName.value.trim() != '' && msg.value.trim() != '') {
-
         if (mail.match(pattern) && phone.match(patternPhone)) {
             // Validierung Radio Button
             if (emailRadio.checked === true) {
@@ -45,15 +39,11 @@ function validationForm() {
             msgText.classList.remove("valid");
             msgText.classList.add("invalid");
         }
-
     } else {
         msgText.innerHTML = "<i class=\"fas fa-times cross\"></i>Please fill out the required inputs.";
         msgText.classList.remove("valid");
         msgText.classList.add("invalid");
-    }
-
-}
-
+    }}
 // Login
 function loginCheck() {
     const pw = document.querySelector('input[name=password]');
@@ -66,7 +56,6 @@ function loginCheck() {
         login.classList.add("valid");
         login.classList.remove("invalid");
         login.innerHTML = "<i class=\"fas fa-check check\"></i>Successful login";
-
     } else {
         login.classList.add("invalid");
         login.classList.remove("valid");

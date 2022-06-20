@@ -41,14 +41,12 @@ const jsonData = {
     "lion6": "lion-6",
 }
 imagebtn();
-
 function imagebtn() {
     const values = Object.values(jsonData)
     const randomValue = values[parseInt(Math.random() * values.length)]
     document.getElementById("rndmimg").src = "img/" + randomValue + ".png"
     document.getElementById("rndmimg").alt = "lion-sanctuary-nft-" + randomValue
 }
-
 let btn = document.getElementById("btn");
 btn.addEventListener('click', event => {
     imagebtn();
